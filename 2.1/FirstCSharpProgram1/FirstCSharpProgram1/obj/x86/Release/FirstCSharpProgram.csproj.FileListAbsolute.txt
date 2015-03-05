@@ -1,0 +1,4 @@
+C:\Users\Brian\AppData\Local\Temporary Projects\FirstCSharpProgram\bin\Release\FirstCSharpProgram.exe
+C:\Users\Brian\AppData\Local\Temporary Projects\FirstCSharpProgram\bin\Release\FirstCSharpProgram.pdb
+C:\Users\Brian\AppData\Local\Temporary Projects\FirstCSharpProgram\obj\x86\Release\FirstCSharpProgram.exe
+C:\Users\Brian\AppData\Local\Temporary Projects\FirstCSharpProgram\obj\x86\Release\FirstCSharpProgram.pdb
