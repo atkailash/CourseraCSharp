@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace Assignment2
+namespace ProgrammingAssignment2
 {
     static class Program
     {

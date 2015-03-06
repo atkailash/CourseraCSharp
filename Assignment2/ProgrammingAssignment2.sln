@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment2", "Assignment2\Assignment2.csproj", "{84FBCB71-EEDC-446D-A293-46295B58AF0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingAssignment2", "Assignment2\ProgrammingAssignment2.csproj", "{84FBCB71-EEDC-446D-A293-46295B58AF0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,6 @@ Global
 		{84FBCB71-EEDC-446D-A293-46295B58AF0F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assignment2\Assignment2.csproj
+		StartupItem = Assignment2\ProgrammingAssignment2.csproj
 	EndGlobalSection
 EndGlobal
