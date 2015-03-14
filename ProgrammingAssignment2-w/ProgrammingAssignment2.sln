@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingAssignment2", "ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2.csproj", "{B4380271-25D5-4AD6-8D4D-37A29C46679D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingAssignment2Content", "ProgrammingAssignment2-w\ProgrammingAssignment2-wContent\ProgrammingAssignment2Content.contentproj", "{8CA2B757-FF04-428C-8BA5-0D369A2E3834}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4380271-25D5-4AD6-8D4D-37A29C46679D}.Debug|x86.ActiveCfg = Debug|x86
+		{B4380271-25D5-4AD6-8D4D-37A29C46679D}.Debug|x86.Build.0 = Debug|x86
+		{B4380271-25D5-4AD6-8D4D-37A29C46679D}.Release|x86.ActiveCfg = Release|x86
+		{B4380271-25D5-4AD6-8D4D-37A29C46679D}.Release|x86.Build.0 = Release|x86
+		{8CA2B757-FF04-428C-8BA5-0D369A2E3834}.Debug|x86.ActiveCfg = Debug|x86
+		{8CA2B757-FF04-428C-8BA5-0D369A2E3834}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

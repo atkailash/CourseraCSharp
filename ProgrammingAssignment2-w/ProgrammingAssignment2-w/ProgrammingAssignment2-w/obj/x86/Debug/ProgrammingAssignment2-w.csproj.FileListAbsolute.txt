@@ -1,0 +1,9 @@
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\bin\x86\Debug\ProgrammingAssignment2-w.exe
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\bin\x86\Debug\ProgrammingAssignment2-w.pdb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\obj\x86\Debug\ProgrammingAssignment2-w.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\obj\x86\Debug\ProgrammingAssignment2-w.exe
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\obj\x86\Debug\ProgrammingAssignment2-w.pdb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\bin\x86\Debug\Content\sprite00.xnb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\bin\x86\Debug\Content\sprite01.xnb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment2-w\ProgrammingAssignment2-w\ProgrammingAssignment2-w\bin\x86\Debug\Content\sprite02.xnb
