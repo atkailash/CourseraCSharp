@@ -83,7 +83,7 @@ namespace ProgrammingAssignment3
             srock01 = Content.Load<Texture2D>("magentarock");
             srock02 = Content.Load<Texture2D>("whiterock");
             // STUDENTS: Create a new random rock by calling the GetRandomRock method
-            Rock rock00 = GetRandomRock();
+            rock00 = GetRandomRock();
         }
 
         /// <summary>
@@ -107,36 +107,55 @@ namespace ProgrammingAssignment3
                 this.Exit();
 
             // STUDENTS: update rocks
-            rock00.Update(gameTime);
-            rock01.Update(gameTime);
-            rock02.Update(gameTime);
+            
+                rock00.Update(gameTime);
+           
+            if (rock01 != null)
+            {
+                rock01.Update(gameTime);
+            }
+            if (rock02 != null)
+            {
+                rock02.Update(gameTime);
+            }
+
 
             // update timer
             elapsedDelayMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
             if (elapsedDelayMilliseconds >= TOTAL_DELAY_MILLISECONDS)
             {
                 // STUDENTS: timer expired, so spawn new rock if fewer than 3 rocks in window
-                if (rock00 != null)
+
+                if (rock01 == null)
                 {
-                    if (rock00.OutsideWindow)
-                    {
-                        rock00 = GetRandomRock();
-                    }
+                    rock01 = GetRandomRock();
                 }
+                if (rock02 == null)
+                {
+                    rock02 = GetRandomRock();
+                }
+
+                if (rock00.OutsideWindow == true)
+                {
+                    rock00 = GetRandomRock();
+                }
+
                 if (rock01 != null)
                 {
-                    if (rock01.OutsideWindow)
+                    if (rock01.OutsideWindow == true)
                     {
                         rock01 = GetRandomRock();
                     }
                 }
+
                 if (rock02 != null)
                 {
-                    if (rock02.OutsideWindow)
+                    if (rock02.OutsideWindow == true)
                     {
                         rock02 = GetRandomRock();
                     }
                 }
+
                 // restart timer
                 elapsedDelayMilliseconds = 0;
             }
@@ -158,7 +177,16 @@ namespace ProgrammingAssignment3
 
             // STUDENTS: draw rocks
             spriteBatch.Begin();
-
+                           rock00.Draw(spriteBatch);
+       
+            if (rock01 != null)
+            {
+                rock01.Draw(spriteBatch);
+            }
+            if (rock02 != null)
+            {
+                rock02.Draw(spriteBatch);
+            }
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -191,7 +219,7 @@ namespace ProgrammingAssignment3
         {
             // STUDENTS: Uncommment and modify the code below as appropriate to return 
             // a random sprite
-            int spriteNumber = rand.Next(3);
+            int spriteNumber = rand.Next(2);
             if (spriteNumber == 0)
             {
                 return srock00;
@@ -218,7 +246,7 @@ namespace ProgrammingAssignment3
         {
             // STUDENTS: Uncommment and modify the code below as appropriate to return 
             // a random velocity
-            int velocityNumber = rand.Next(5);
+            int velocityNumber = rand.Next(3);
             if (velocityNumber == 0)
             {
                 return upLeft;

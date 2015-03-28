@@ -1,0 +1,12 @@
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\Arial20.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\burger.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\explosion.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\frenchfries.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\teddybear.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\Content\teddybearprojectile.xnb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+C:\Users\Brian\Coding\CourseraCSharp\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
