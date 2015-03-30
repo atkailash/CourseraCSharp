@@ -1,0 +1,8 @@
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\obj\x86\Debug\ProgrammingAssignment4.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\bin\x86\Debug\Content\pickup.xnb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\bin\x86\Debug\Content\teddybear.xnb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\bin\x86\Debug\ProgrammingAssignment4.exe
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\bin\x86\Debug\ProgrammingAssignment4.pdb
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\obj\x86\Debug\ProgrammingAssignment4.exe
+C:\Users\Brian\Coding\CourseraCSharp\ProgrammingAssignment4\ProgrammingAssignment4\ProgrammingAssignment4\obj\x86\Debug\ProgrammingAssignment4.pdb
