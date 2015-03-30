@@ -124,16 +124,47 @@ namespace GameProject
         public void Update(GameTime gameTime, MouseState mouse)
         {
             // burger should only respond to input if it still has health
-
+            if (this.health > 0)
+            {
                 // move burger using mouse
-
+                this.X = mouse.X - (sprite.Width / 2);
+                this.Y = mouse.Y - (sprite.Height / 2);
                 // clamp burger in window
+                if (mouse.X > GameConstants.WINDOW_WIDTH)
+                {
+                    this.X = GameConstants.WINDOW_WIDTH - sprite.Width;
+                }
+                else if (mouse.X <= 0)
+                {
+                    this.X = 0 + sprite.Width;
+                }
 
+                if (mouse.Y > GameConstants.WINDOW_HEIGHT)
+                {
+                    this.Y = GameConstants.WINDOW_HEIGHT - sprite.Height;
+                }
+                else if (mouse.Y <= 0)
+                {
+                    this.Y = 0 + sprite.Height;
+                } 
                 // update shooting allowed
+                this.canShoot = true;
                 // timer concept (for animations) introduced in Chapter 7
 
                 // shoot if appropriate
-
+                if (mouse.LeftButton == ButtonState.Pressed && canShoot)
+                {
+                    bool l_clickStarted = true;
+                    bool l_Released = false;
+                    canShoot = false;
+                    Projectile spawnProjectile = new Projectile(ProjectileType.FrenchFries,
+                                                                Game1.GetProjectileSprite(ProjectileType.FrenchFries),
+                                                                (this.drawRectangle.Location.X + (this.drawRectangle.Width / 2)),
+                                                                ((this.drawRectangle.Location.Y) - GameConstants.FRENCH_FRIES_PROJECTILE_OFFSET),
+                                                                GameConstants.FRENCH_FRIES_PROJECTILE_SPEED);
+                    Game1.AddProjectile(spawnProjectile);
+                }
+            }
         }
 
         /// <summary>

@@ -89,9 +89,12 @@ namespace GameProject
             // load sprite font
            
             // load projectile and explosion sprites
-
+            // TODO explosion (Inc 3?)
+            teddyBearProjectileSprite = Content.Load<Texture2D>("teddybearprojectile");
+            frenchFriesSprite = Content.Load<Texture2D>("frenchfries");
+           
             // add initial game objects
-            burger = new Burger(Content, "burger", (GameConstants.WINDOW_WIDTH / 2), (GameConstants.WINDOW_HEIGHT / 2), null);
+            burger = new Burger(Content, "burger", (GameConstants.WINDOW_WIDTH / 2), ((GameConstants.WINDOW_HEIGHT / 8) * 7), null);
             SpawnBear();
             // set initial health and score strings
         }
@@ -118,6 +121,8 @@ namespace GameProject
                 this.Exit();
 
             // get current mouse state and update burger
+            MouseState mouse = Mouse.GetState();
+            burger.Update(gameTime, mouse);
 
             // update other game objects
             foreach (TeddyBear bear in bears)
@@ -144,7 +149,13 @@ namespace GameProject
             // clean out inactive teddy bears and add new ones as necessary
 
             // clean out inactive projectiles
-
+            /* foreach (Projectile projectile in projectiles)
+            {
+                if (projectile.Active == false)
+                {
+                    projectiles.Remove(projectile);
+                }
+            } */
             // clean out finished explosions
 
             base.Update(gameTime);
@@ -192,7 +203,14 @@ namespace GameProject
         public static Texture2D GetProjectileSprite(ProjectileType type)
         {
             // replace with code to return correct projectile sprite based on projectile type
-            return frenchFriesSprite;
+            if (type == ProjectileType.FrenchFries)
+            {
+                return frenchFriesSprite;
+            }
+            else
+            {
+                return teddyBearProjectileSprite;
+            }
         }
 
         /// <summary>
@@ -201,7 +219,7 @@ namespace GameProject
         /// <param name="projectile">the projectile to add</param>
         public static void AddProjectile(Projectile projectile)
         {
-
+            projectiles.Add(projectile);
         }
 
         #endregion

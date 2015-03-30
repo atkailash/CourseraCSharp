@@ -89,9 +89,12 @@ namespace GameProject
         public void Update(GameTime gameTime)
         {
             // move projectile
-
+            this.drawRectangle.Y -= (int)(gameTime.ElapsedGameTime.Milliseconds * this.yVelocity);
             // check for outside game window
-
+            if (this.drawRectangle.Y < 0)
+            {
+                this.Active = false;
+            }
         }
 
         /// <summary>
@@ -100,7 +103,7 @@ namespace GameProject
         /// <param name="spriteBatch">the sprite batch to use</param>
         public void Draw(SpriteBatch spriteBatch)
         {
-
+            spriteBatch.Draw(this.sprite, this.drawRectangle, Color.White);
         }
 
         #endregion
