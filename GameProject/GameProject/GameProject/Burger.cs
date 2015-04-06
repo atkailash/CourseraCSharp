@@ -146,16 +146,21 @@ namespace GameProject
                 else if (mouse.Y <= 0)
                 {
                     this.Y = 0 + sprite.Height;
-                } 
+                }
+            }
                 // update shooting allowed
-                this.canShoot = true;
                 // timer concept (for animations) introduced in Chapter 7
-
-                // shoot if appropriate
-                if (mouse.LeftButton == ButtonState.Pressed && canShoot)
+            if (this.health > 0 && canShoot == false) {
+                elapsedCooldownTime += gameTime.ElapsedGameTime.Milliseconds;
+                if (elapsedCooldownTime >= GameConstants.BURGER_COOLDOWN_MILLISECONDS || mouse.LeftButton == ButtonState.Released)
                 {
-                    bool l_clickStarted = true;
-                    bool l_Released = false;
+                    canShoot = true;
+                    elapsedCooldownTime = 0;
+                }
+            }
+                // shoot if appropriate
+                if (this.health > 0 && mouse.LeftButton == ButtonState.Pressed && canShoot)
+                {
                     canShoot = false;
                     Projectile spawnProjectile = new Projectile(ProjectileType.FrenchFries,
                                                                 Game1.GetProjectileSprite(ProjectileType.FrenchFries),
@@ -164,8 +169,7 @@ namespace GameProject
                                                                 GameConstants.FRENCH_FRIES_PROJECTILE_SPEED);
                     Game1.AddProjectile(spawnProjectile);
                 }
-            }
-        }
+                }     
 
         /// <summary>
         /// Draws the burger

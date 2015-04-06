@@ -140,6 +140,18 @@ namespace GameProject
             BounceLeftRight();
 
             // fire projectile as appropriate
+            elapsedShotTime += gameTime.ElapsedGameTime.Milliseconds;
+            if (elapsedShotTime > firingDelay)
+            {
+                elapsedShotTime = 0;
+                firingDelay = GetRandomFiringDelay();
+                Projectile spawnProjectile = new Projectile(ProjectileType.TeddyBear,
+                                                                Game1.GetProjectileSprite(ProjectileType.TeddyBear),
+                                                                (this.drawRectangle.Location.X + (this.drawRectangle.Width / 2)),
+                                                                ((this.drawRectangle.Location.Y) - GameConstants.TEDDY_BEAR_PROJECTILE_OFFSET),
+                                                                GameConstants.TEDDY_BEAR_PROJECTILE_SPEED);
+                Game1.AddProjectile(spawnProjectile);
+            }
             // timer concept (for animations) introduced in Chapter 7
 
         }
